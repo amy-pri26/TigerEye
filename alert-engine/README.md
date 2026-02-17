@@ -19,7 +19,9 @@ OTX is used as an OSINT enrichment source to provide threat intelligence on IP a
 
 3. Create an account if you do not already have one.
 
-4. Verify your email address if prompted.
+5. Account names must follow this format: **"firstnameAUB"**
+
+6. Verify your email address if prompted.
 
 
 
