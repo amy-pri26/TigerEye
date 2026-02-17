@@ -1,4 +1,4 @@
-# OTX Setup \& API Key Configuration
+# OTX Setup & API Key Configuration
 
 
 
