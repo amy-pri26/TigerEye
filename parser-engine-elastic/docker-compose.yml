@@ -1,0 +1,23 @@
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.13.0
+    container_name: es_dnp3
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    ports:
+      - "9200:9200"
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana_dnp3
+    ports:
+      - "3000:3000"
+    depends_on:
+      - elasticsearch
+
+volumes:
+  esdata:
